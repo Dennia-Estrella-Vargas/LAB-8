@@ -17,24 +17,28 @@ def division(a,b):
 
 while True:
   operator = input ("Enter the operation: +, -, *, /, ^, sin, cos, sqrt or 'q' to exit")
-  if operator == "q":
+  #To quit
+   if operator == "q":
       break
-  elif operator == "sin":
+   #To calculate sine
+   elif operator == "sin":
       x = float(input("Enter a number "))
       value = math.sin(x)
       print(f"{operator} ({x})= {value}")
-  elif operator == "cos":
+   #To calculate cosine
+   elif operator == "cos":
        x = float(input("Enter a number "))
        value = math.cos(x)
        print(f"{operator} ({x})= {value}")
-  elif operator == "sqrt":
+   #To calculate square root
+   elif operator == "sqrt":
       x = float(input("Enter a number "))
       value = math.sqrt(x)
       print(f"{operator} ({x})= {value}")
   else:
       x = float(input("Enter the first number"))
       y = float(input("Enter the second number"))
-      
+    #To calculate basic operations
       if operator == "+":
          value = addition(x,y)
          print(f"{x} {operator} {y} = {value}")
