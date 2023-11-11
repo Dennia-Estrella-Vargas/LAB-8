@@ -17,7 +17,7 @@ def total(bookQuantity, bookPrice):
 
 ans='y'
 #run while until no
-while(ans=='y'or ans=='Y'):
+while(ans=='yes'or ans=='YES'):
   #take user input
   price=float(input("What is the price of the book?"))
   quantity=int(input("How many books will be ordered?"))
@@ -25,5 +25,5 @@ while(ans=='y'or ans=='Y'):
   totalCost=round(total(quantity, price),2)
   #print the returned value 
   print(f"Total is ${totalCost}")
-  ans=input("Any more books (y/n)?")
-print("Have a nice day.")
+  ans=input("Any more books (yes/no)?")
+print("Have a nice day!")
